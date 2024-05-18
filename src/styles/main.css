@@ -1,16 +1,60 @@
+.titulo {
+    background-color: brown;
+    color: white;
+    font-style: inherit;
+}
+
 .contenedor-perfil {
-    border: 1px solid black; padding: 10px;border-radius: 10px;
+    /*border: 1px solid black; padding: 10px;border-radius: 10px;*/
+    text-align: center;
+    background: #fafafa; /* Fondo ligeramente gris */
+    padding: 20px; /* Padding interno */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 600px; /* Ancho máximo */
+    margin: 20px auto; /* Centrarse horizontalmente */
+    
 }
 .imagen-perfil{
     width: 100px;
     height: 100px;
     border-radius: 150px;
+
 }
 p{
     padding-left: 10px;
 
 }
+h3 {
+    color: #3498db; /* Color azul */
+    border-bottom: 2px solid #3498db; /* Línea inferior azul */
+    padding-bottom: 5px; /* Espacio entre el texto y la línea */
+    margin-bottom: 10px; /* Espacio debajo del subtítulo */
+}
+
+ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 10px; /* Quita el padding predeterminado */
+}
+
 li {
-    font-size: x-large;
-    color: blue;
+    background: #f4f4f4; /* Fondo gris claro */
+    margin: 5px 0; /* Margen entre los elementos de la lista */
+    padding: 10px; /* Padding interno */
+    border-left: 5px solid #3498db; /* Borde izquierdo azul */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background 0.3s; /* Transición suave al cambiar el fondo */
+}
+
+li:hover {
+    background: #e1e1e1; /* Fondo gris más oscuro al pasar el ratón */
+}
+
+li::before {
+    content: '✔'; /* Agrega un símbolo antes del texto */
+    color: #3498db; /* Color del símbolo */
+    font-weight: bold; /* Negrita para el símbolo */
+    display: inline-block; /* Para usar margin-right */
+    width: 1em; /* Espacio reservado para el símbolo */
+    margin-right: 10px; /* Espacio entre el símbolo y el texto */
 }
